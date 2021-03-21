@@ -205,7 +205,7 @@ export class MapInteractionControlled extends Component {
     e.preventDefault();
     e.stopPropagation();
 
-    const scaleChange = 2 ** (e.deltaY * 0.002);
+    const scaleChange = 2 ** (e.deltaY * 0.010);
 
     const newScale = clamp(
       this.props.minScale,
